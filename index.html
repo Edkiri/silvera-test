@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="./index.css">
+    <title>Home</title>
+  </head>
+  <body data-spy="scroll" data-offset="115" data-target="#navbarNav">
+    
+    <!-- Header -->
+    <header id="header" class="container-fluid fixed-top">
+      <div class="container-fluid pt-3 pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2 col-lg-1 p-0 offset-0">
+              <img class="header__logo" src="./assets/images/LOGO-many.png" alt="">
+            </div>
+            <div class="header__info col-3 offset-1 p-0 d-none d-lg-block">
+              <h6 class="header__info--title mb-0">Opening Hour:</h6>
+              <small>Mon  -  Sat 8:00  -  17:30, CLOSED</small>
+            </div>
+            <div class="header__info col-5 col-sm-2 offset-5 offset-sm-1 offset-lg-2">
+              <h6 class="header__info--title mb-1">Follow us</h6>
+              <div class="header__socialMedia">
+                <a href="">
+                  <i class="bi bi-facebook p-2 ps-0"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-twitter p-2"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-instagram p-2"></i>
+                </a>
+                <a href="" class="social-icon">
+                  <i class="bi bi-linkedin p-2"></i>
+                </a>
+              </div>
+            </div>
+            <div class="phoneContact header__info col-4 offset-1 col-sm-5 offset-sm-2 col-lg-3 offset-lg-0 d-none d-sm-block">
+              <h6 class="header__info--title d-block d-md-inline mb-0">Free call</h6>
+              <span class="p-0">+1 234 456 78910</span>
+              <small class="d-none d-sm-block">Call Us Now 24/7 Customer Support</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <nav id="navbarContainer" class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid justify-content-end pe-4">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-md-flex justify-content-center" id="navbar">
+            <div id="navbarNav" class="navbar-nav">
+              <a class="nav-link" href="#hero">Home</a>
+              <a class="nav-link" href="#about">About us</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#contact">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- Hero -->
+    <main id="hero" class="container-fluid">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="offset-2 col-8 offset-md-0 col-md-6 hero__title text-center text-md-start pt-4 mt-md-5 pt-md-5 pe-0 ps-0 d-flex flex-column">
+              <h1>We create the desired Home for you</h1>
+              <div class="orange-line pt-1 pb-2 align-self-center align-self-md-start"></div>
+              <p class="d-none d-md-block mt-1">Contact us to find out your ideas and build them together</p>
+            </div>
+            <div class="form-container col-12 col-md-6 d-flex justify-content-center align-items-md-center">
+              <form class="p-4 mb-4">
+                <div class="row">
+                  <h2 class="pt-4 pb-3 m-0">Make a Reservation</h2>
+                </div>
+                <div class="row form-group">
+                  <div class="col-12 p-0 pb-3">
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                  </div>
+                  <div class="col-6 p-0 pb-3">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                  </div>
+                  <div class="col-6 p-0 pb-3">
+                    <input type="text" class="form-control" placeholder="Telephone" aria-label="Telephone">
+                  </div>
+                  <div class="col-12 p-0 pb-3 input-group date" id="datepicker">
+                    <input type="text" class="form-control" placeholder="dd/mm/yyyy" aria-label="Date">
+                    <span class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="fa fa-calendar"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="col-12 p-0 pb-3">
+                    <input type="text" class="form-control" placeholder="Choose a service" aria-label="Telephone">
+                  </div>
+                  <div class="col-12 p-0 pb-3">
+                    <input type="text" class="form-control" placeholder="Mensaje" aria-label="Telephone">
+                  </div>
+                    <button class="col-12 pt-2 pb-2 btn btn-primary" type="button">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      <video src="./assets/videos/hero-background.mp4" muted loop autoplay></video>
+    </main>
+    <!-- /Hero -->
+
+    <!-- About -->
+    <section id="about" class="about container-fluid pb-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="position-relative col-6 d-none d-md-block">
+            <img class="about__img" src="./assets/images/about.jpg" alt="">
+            <img class="hammer" src="./assets/icons/hammer.png" alt="">
+            <div class="triangle">
+              <div class="triangle-element"></div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-10 offset-sm-1 d-flex flex-column text-center justify-content-center col-md-6 offset-md-0 text-md-start justify-content-md-start ps-lg-5">
+            <div class="about__title mt-2 mt-lg-5 ps-0 ps-md-3 ps-lg-0">
+              <span class="topTitle">Welcome to construction company</span>
+              <h2>Why work whit us?</h2>
+            </div>
+            <p class="about__description ps-0 ps-md-5 ps-lg-3 mt-4 mt-lg-4">
+              We are a company with highly qualified and responsible
+              personnel who will perform the best jobs for your home.
+            </p>
+            <div class="about__cards-container ps-5 mt-1 mt-lg-3">
+              <div class="about__card mt-3 ms-auto me-auto ms-md-0 me-md-0">
+                <span>Quality construction</span>
+                <img src="./assets/images/work-4.jpg" alt="">
+              </div>
+              <div class="about__card mt-3 ms-auto me-auto ms-md-0 me-md-0">
+                <span>Professional Liability</span>
+                <img src="./assets/images/work-5.jpg" alt="">
+              </div>
+              <div class="about__card mt-3 ms-auto me-auto ms-md-0 me-md-0 d-flex d-md-none d-lg-flex">
+                <span>Dedicated To Clients</span>
+                <img src="./assets/images/work-7.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About -->
+
+    <!-- Services -->
+    <section id="services" class="services container-fluid pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-7 d-flex flex-column text-center text-md-start">
+            <span class="topTitle">About us</span>
+            <h3>Best Provider for Industrial Services</h3>
+            <p class="services__description">We are a unique company dedicated to our clients</p>
+            <div class="services__btn-container">
+              <button class="col-4 misionBtn active" type="button">Our Mission</button>
+              <button class="col-4 misionBtn" type="button">Our Vision</button>
+              <button class="col-4 misionBtn" type="button">Our Value</button>
+            </div>
+            <p id="misionText" class="pt-4 ps-3">
+              We are an expert group in architectural design and interior
+              design with a residential approach, where we generate creative, 
+              authentic and innovative solutions, achieving results that exceed
+              the expectations of each client.
+            </p>
+            <a class="linkBtn align-self-center mt-5" href="#">Contact us!</a>
+          </div>
+          <div class="col-12 offset-0 col-md-5 col-lg-4 offset-md-1 mt-3 mt-md-0">
+            <div class="text-center text-md-start">
+              <span class="topTitle">Services</span>
+              <h2 class="pe-4">Know what we offer you</h2>
+            </div>
+            <div class="offer-container d-flex flex-column">
+              <div class="offer-card offer-card--gray d-flex">
+                <div class="offer__logo pe-2">
+                  <img src="./assets/icons/compas.jpg" alt="">
+                </div>
+                <div class="offer__desc-container">
+                  <h6 class="pt-2">Interior design</h6>
+                  <p class="pb-2 pe-4">
+                    We design the best interiors for your home full og styles
+                    and confort.
+                  </p>
+                </div>
+              </div>
+              <div class="offer-card offer-card--orange d-flex">
+                <div class="offer__logo pe-2">
+                  <img src="./assets/icons/llave.jpg" alt="">
+                </div>
+                <div class="offer__desc-container">
+                  <h6 class="pt-2">Plumbing</h6>
+                  <p class="pb-2 pe-4">
+                    We help you repair your plumbing. Our service is of quality.
+                  </p>
+                </div>
+                </div>
+              <div class="offer-card offer-card--dark d-flex">
+                <div class="offer__logo pe-2">
+                  <img src="./assets/icons/paint.jpg" alt="">
+                </div>
+                <div class="offer__desc-container">
+                  <h6 class="pt-2">Painting</h6>
+                  <p class="pb-2 pe-4">
+                    Painting your house is a task that we can do for you, in a 
+                    short time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Services -->
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery container-fluid pt-5 pb-5">
+      <div class="container pb-4 d-flex flex-column text-center text-md-start">
+        <span class="topTitle ps-2">Our Projects</span>
+        <h3 class="pb-2 ps-2">Know what we do</h3>
+        <div class="galley__img-container container-fluid p-0">
+          <div>
+            <img src="./assets/images/work-5.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/images/work-6.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/images/work-7.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/images/work-8.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/images/work-1.jpg" alt="">
+          </div>
+        </div>
+        <a class="linkBtn mt-5 align-self-center" href="#">View gallery</a>
+      </div>
+    </section>
+    <!-- /Gallery -->
+
+    <!-- About 2 -->
+    <section id="about2" class="about2 container-fluid pt-5 pb-3">
+      <div class="container p-0 mt-5">
+        <div class="overlay p-5">
+          <div class="row p-0 p-sm-3">
+            <div class="about2__testimonials-container col-12 col-sm-10 offset-0 offset-sm-1 col-md-6 offset-md-0 text-center pb-2 p-0 p-sm-3 p-lg-5">
+              <span>View Testimonials</span>
+              <h2>
+                for us it is very important to know the opinions of our clients
+              </h2>
+            </div>
+            <div class="col-12 col-sm-10 offset-0 offset-sm-1 col-md-6 offset-md-0">
+              <div class="about2__img-container position-relative m-auto">
+                <img src="./assets/images/person_4.jpg" alt="">
+                <span class="personName d-none d-sm-block">Jeff Freshman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About 2 -->
+
+    <!-- Contact -->
+    <section id="contact" class="contact container-fluid">
+      <div class="container pt-5 pb-5">
+        <div class="row d-flex flex-column flex-md-row align-items-center justify-content-space-between pt-3 pb-5">
+          <div class="contact__title col col-md-5 ps-md-5 d-flex flex-column align-items-center align-items-md-start">
+            <span class="topTitle">Our social media</span>
+            <h3>Follow us on Social Media</h3>
+          </div>
+          <div class="contact__media-container pt-2 pt-md-0 offset-md-1 col-md-6 d-flex justify-content-center">
+            <a href="#" class="social-icon-bottom">
+              <i class="bi bi-twitter p-1"></i>
+            </a>
+            <a href="#" class="social-icon-bottom">
+              <i class="bi bi-facebook p-1"></i>
+            </a>
+            <a href="#" class="social-icon-bottom">
+              <i class="bi bi-youtube p-1"></i>
+            </a>
+            <a href="#" class="social-icon-bottom">
+              <i class="bi bi-instagram p-1"></i>
+            </a>
+            <a href="#" class="social-icon-bottom">
+              <i class="bi bi-linkedin p-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact__newsletter row mt-5 pt-4 pb-4">
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <h4 class="d-inline-block pe-0 pe-md-5">Subscribe to our Newsletter</h4>
+            <div class="input-group pt-2 pt-md-0">
+              <input type="text" class="form-control" placeholder="Enter email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary pt-1 pb-1" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Contact -->
+
+    <!-- Footer -->
+    <div id="footer" class="footer container-fluid pt-5 pb-5">
+      <div class="container footer__top">
+        <div class="row">
+          <div class="footer__contact col-12 col-sm-5 offset-0 offset-sm-1 offset-md-0 col-md-4 col-lg-3 d-flex flex-column align-items-center align-items-sm-start">
+            <h6>Office Contact</h6>
+            <div class="orange-line"></div>
+            <ul>
+              <li>
+                <i class="bi bi-geo-alt-fill pe-1"></i>
+                <span>123 Street, New York, USA</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill pe-1"></i>
+                <span>+012 345 67890</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill pe-1"></i>
+                <span>info@example.com</span>
+              </li>
+            </ul>
+            <div class="footer__social-media">
+              <a href="#">
+                <i class="bi bi-twitter p-1"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-facebook p-1"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-youtube p-1"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-instagram p-1"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-linkedin p-1"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__services d-none d-md-block col-3 offset-1">
+            <h6>Services Areas</h6>
+            <div class="orange-line"></div>
+            <ul>
+              <li>
+                <span>Building Construction</span>
+              </li>
+              <li>
+                <span>House Renovation</span>
+              </li>
+              <li>
+                <span>Architecture Design</span>
+              </li>
+              <li>
+                <span>Inferior Design</span>
+              </li>
+              <li>
+                <span>Painting</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__useful col-12 col-sm-3 offset-0 offset-sm-1 pt-4 pt-sm-0 d-flex flex-column align-items-center align-items-sm-start">
+            <h6>Useful Pages</h6>
+            <div class="orange-line"></div>
+            <ul>
+              <li>
+                <span>About Us</span>
+              </li>
+              <li>
+                <span>Services</span>
+              </li>
+              <li>
+                <span>Galley</span>
+              </li>
+              <li>
+                <span>Contact Us</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="footer__bottom pt-3 pb-3 container-fluid d-flex flex-column align-items-center">
+        <p>Copytight <span class="companyName">Company Name</span>. All rights Reserved</p>
+        <p>This website Was Design And Developed by <span class="developedBy">Josesilvera.com</span></p>
+        <img src="./assets/images/Logo-JS-White-Wshadow.png" alt="">
+      </div>
+    </div>
+    <!-- /Footer -->
+
+    <script src="index.js"></script>
+    <script>
+      $(function(){
+        $('#datepicker').datepicker();
+      })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
