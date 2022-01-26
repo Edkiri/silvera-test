@@ -291,14 +291,48 @@
   font-size: 12px;
   color: white;
 }
-.about2__img-container {
-  min-width: 230px;
-  max-width: 300px;
-  border-radius: 2px;
-  /* overflow: hidden; */
+.about2 .carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.about2__img-container img {
+.about2 ul.carousel {
+  position: relative;
   width: 100%;
+  max-width: 300px;
+  height: 300px;
+}
+.about2__img-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+.about2__img-container img, video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about2 ul.carousel ul,
+.about2 ul.carousel li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about2 ul.carousel ul {
+  height: 100%;
+}
+#aboutOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.about2 ul.carousel li {
+  position: absolute;
+  opacity: 0;
 }
 .personName {
   width: 200px;
@@ -308,12 +342,68 @@
   background-color: white;
   border-radius: 6px;
   padding: 4px;
-  bottom: -15px;
-  right: 60px;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, 50%);
   font-style: italic;
   font-weight: bold;
+  z-index: 3;
 }
-
+#playBtn {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  background-color: hsl(16deg 73% 51%);
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  line-height: 64px;
+  font-size: 40px;
+  padding-left: 15px;
+  top: 50%;
+  right: 50%;
+  transform: translate(+50%, -50%);
+  cursor: pointer;
+}
+#playBtn:hover {
+  background-color: red;
+}
+#pauseBtn {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  background-color: hsl(16deg 73% 51%);
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  line-height: 64px;
+  font-size: 40px;
+  padding-left: 13px;
+  top: 50%;
+  right: 50%;
+  transform: translate(+50%, -50%);
+  cursor: pointer;
+}
+#pauseBtn:hover {
+  background-color: red;
+}
+.about2 ul.carousel-menu li, ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.about2 ul.carousel-menu li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+.about2 ul.carousel-menu li.active {
+  background-color: hsl(41deg 98% 50%);
+}
 .contact__title h3 {
   font-weight: bold;
 }
